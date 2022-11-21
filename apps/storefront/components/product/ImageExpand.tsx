@@ -12,7 +12,6 @@ export function ImageExpand({ image, onRemoveExpand }: ImageExpandProps) {
   if (!image) {
     return null;
   }
-  console.log("###########image", image);
   return (
     <div className="min-h-screen absolute overflow-hidden grid grid-cols-1 mx-auto px-8 md:h-full w-full bg-gray-100">
       <div

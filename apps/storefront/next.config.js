@@ -4,11 +4,9 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 const apiURL = new URL(process.env.NEXT_PUBLIC_API_URI);
-console.log("apiURL", apiURL);
 const allowedImageDomains = process.env.NEXT_PUBLIC_ALLOWED_IMAGE_DOMAINS
   ? process.env.NEXT_PUBLIC_ALLOWED_IMAGE_DOMAINS.split(",")
   : [];
-console.log("allowedImageDomains", allowedImageDomains);
 const checkoutEmbededInStorefrontPath = "/saleor-app-checkout";
 
 module.exports = withBundleAnalyzer({
