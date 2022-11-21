@@ -60,24 +60,24 @@ module.exports = withBundleAnalyzer({
       },
       {
         source: `${checkoutEmbededInStorefrontPath}/`,
-        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/`,
+        destination: `${process.env.NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL}/`,
       },
       {
         source: `${checkoutEmbededInStorefrontPath}/:path*/`,
-        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/:path*/`,
+        destination: `${process.env.NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL}/:path*/`,
       },
       {
         source: `${checkoutEmbededInStorefrontPath}/:path*`,
-        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL}/:path*`,
       },
 
       {
         source: "/api/manifest",
-        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/api/manifest`,
+        destination: `${process.env.NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL}/api/manifest`,
       },
       {
         source: "/api/install",
-        destination: `${process.env.NEXT_PUBLIC_CHECKOUT_APP_URL}/api/install`,
+        destination: `${process.env.NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL}/api/install`,
       },
       ...(cloudDeploymentUrl
         ? [

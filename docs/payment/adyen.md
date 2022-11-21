@@ -51,7 +51,7 @@ Fill out the webhook details:
   - **URL**:
 
 ```
-<YOUR_CHECKOUT_APP_URL>/api/webhooks/adyen/?saleorApiUrl=<YOUR_SALEOR_API_URL>
+<YOUR_REACT_APP_CHECKOUT_APP_URL>/api/webhooks/adyen/?saleorApiUrl=<YOUR_SALEOR_API_URL>
 ```
 
 > **Note**<br/>

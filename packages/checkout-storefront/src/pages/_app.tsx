@@ -16,18 +16,18 @@ const CheckoutStoreFront = Dynamic(
   }
 );
 
-const checkoutApiUrl = process.env["NEXT_PUBLIC_CHECKOUT_APP_URL"]
-  ? urlJoin(process.env["NEXT_PUBLIC_CHECKOUT_APP_URL"], `api`)
+const checkoutApiUrl = process.env["NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL"]
+  ? urlJoin(process.env["NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL"], `api`)
   : "";
-const checkoutAppUrl = process.env["NEXT_PUBLIC_CHECKOUT_APP_URL"];
+const checkoutAppUrl = process.env["NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL"];
 
 export default function CheckoutSpa() {
   if (!checkoutApiUrl) {
-    console.warn(`Missing NEXT_PUBLIC_CHECKOUT_APP_URL env variable`);
+    console.warn(`Missing NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL env variable`);
     return null;
   }
   if (!checkoutAppUrl) {
-    console.warn(`Missing NEXT_PUBLIC_CHECKOUT_APP_URL env variable`);
+    console.warn(`Missing NEXT_PUBLIC_REACT_APP_CHECKOUT_APP_URL env variable`);
     return null;
   }
 

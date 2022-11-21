@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile.base
       args:
         - SALEOR_API_URL=https://master.staging.saleor.cloud/graphql/ # handled by nginx
-        - CHECKOUT_APP_URL=http://localhost:3001
+        - REACT_APP_CHECKOUT_APP_URL=http://localhost:3001
         - CHECKOUT_STOREFRONT_URL=http://localhost:3001/checkout-spa/
         - CLOUD_DEPLOYMENT_URL=
     ports:
@@ -22,7 +22,7 @@ services:
       args:
         - SALEOR_API_URL=https://master.staging.saleor.cloud/graphql/ # handled by nginx
         - STOREFRONT_URL=http://localhost:3000
-        - CHECKOUT_APP_URL=http://localhost:3001
+        - REACT_APP_CHECKOUT_APP_URL=http://localhost:3001
         - CHECKOUT_STOREFRONT_URL=http://localhost:3001/checkout-spa/
         - CLOUD_DEPLOYMENT_URL=
     ports:
