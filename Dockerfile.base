@@ -18,7 +18,7 @@ RUN pnpm install
 RUN rm .env
 
 ARG SALEOR_API_URL
-ENV SALEOR_API_URL ${SALEOR_API_URL:-http://localhost:8000/graphql/}
+ENV SALEOR_API_URL ${SALEOR_API_URL:-https://mangoit-saleor-backend.herokuapp.com/graphql/}
 
 ARG STOREFRONT_URL
 ENV STOREFRONT_URL ${STOREFRONT_URL:-http://localhost:3000}

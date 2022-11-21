@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile.base
       args:
-        - SALEOR_API_URL=http://localhost:8000/graphql/ # handled by nginx
+        - SALEOR_API_URL=https://mangoit-saleor-backend.herokuapp.com/graphql/ # handled by nginx
         - CHECKOUT_APP_URL=http://localhost:3001
         - CHECKOUT_STOREFRONT_URL=http://localhost:3001/checkout-spa/
         - CLOUD_DEPLOYMENT_URL=
@@ -20,7 +20,7 @@ services:
       context: .
       dockerfile: Dockerfile.base
       args:
-        - SALEOR_API_URL=http://localhost:8000/graphql/ # handled by nginx
+        - SALEOR_API_URL=https://mangoit-saleor-backend.herokuapp.com/graphql/ # handled by nginx
         - STOREFRONT_URL=http://localhost:3000
         - CHECKOUT_APP_URL=http://localhost:3001
         - CHECKOUT_STOREFRONT_URL=http://localhost:3001/checkout-spa/
