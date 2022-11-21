@@ -4,7 +4,7 @@ In this guide we'll deploy Saleor Checkout to production and host it on Vercel.
 
 ## Preparations
 
-We assume you've already configured environment variables except `REACT_APP_CHECKOUT_APP_URL`, as described [in README](../README.md#env-variables)
+We assume you've already configured environment variables except `CHECKOUT_APP_URL`, as described [in README](../README.md#env-variables)
 
 The repo needs to be hosted on GitHub or some other git repository. Before you start, fork the repo to your account or organization.
 
@@ -63,12 +63,12 @@ Click deploy and wait until the app is deployed.
 
 ### 3. Update environment variables in repository
 
-Update `REACT_APP_CHECKOUT_APP_URL` in `.env` file located at the root of monorepo to be your deployment URL.
+Update `CHECKOUT_APP_URL` in `.env` file located at the root of monorepo to be your deployment URL.
 
 Example:
 
 ```
-REACT_APP_CHECKOUT_APP_URL=https://saleor-app-checkout.vercel.app
+CHECKOUT_APP_URL=https://saleor-app-checkout.vercel.app
 ```
 
 ### 4. Install the app in Saleor
